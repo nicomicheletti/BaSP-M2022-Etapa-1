@@ -210,7 +210,7 @@ header h1{
 #contact{
     padding: 50px;
     margin-left: 288px;
-    height: 800px;
+    height: 650px;
     margin-bottom: 1px;
     position: relative;
 }
@@ -244,26 +244,11 @@ header h1{
     color: #373867;
 }
 
-#contact{
-    padding: 50px;
-    margin-left: 288px;
-    height: 280px;
-    margin-bottom: 1px;
-    position: relative;
-}
-
-#contact span{
-    float: center;
-    color: #373867;
-    margin-left: 1px;
-    padding: 4px;
-    font-size: 20px;
-    border-bottom: 4px solid #373867;
-}
-
 footer {
     margin: 18px 0px;
     text-align: center;
+    height: 100px;
+    margin-bottom: 1px;
 }
 
 footer a {
@@ -277,4 +262,7 @@ footer a {
     height: 300px;
     margin-bottom: 1px;
     position: relative;
+    background-size: contain;
+    background-color: #373867;
+    color: #FFFFFF;
 }
