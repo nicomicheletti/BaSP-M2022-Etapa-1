@@ -17,7 +17,7 @@ body p{
 #sidebar{
     float: left;
     width: 288px;
-    height: 2737px;
+    height: 3300px;
     background-color: #B1B2B6;
     color:  #373867;
     padding: 20px 16px;
@@ -155,7 +155,7 @@ header h1{
 #why-trackgenix{
     padding: 50px;
     margin-left: 288px;
-    height: 1000px;
+    height: 800px;
     margin-bottom: 1px;
     position: relative;
 }
@@ -179,7 +179,7 @@ header h1{
     object-fit: cover;
 }
 
-#why-trackgenix .p {
+#txt {
     display: inline-block;
     position: relative;
     bottom: 15px;
@@ -207,9 +207,21 @@ header h1{
     border-top: 0.7px solid #373867;
 }
 
-article {
-    margin: 80px 0px 65px 0px;
-    height: 600px;
+#contact{
+    padding: 50px;
+    margin-left: 288px;
+    height: 800px;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+#contact span{
+    float: center;
+    color: #373867;
+    margin-left: 1px;
+    padding: 4px;
+    font-size: 20px;
+    border-bottom: 4px solid #373867;
 }
 
 #contact div {
