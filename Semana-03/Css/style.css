@@ -1,5 +1,8 @@
-body{
-    font-family: Roboto;
+body {
+    font-size: 14.99px;
+    color: #373867;
+    font-family: 'Roboto';
+    line-height: 22px;
 }
 
 body h2{
@@ -118,7 +121,7 @@ header h1{
 #features{
     padding: 50px;
     margin-left: 288px;
-    height: 200px;
+    height: 150px;
     margin-bottom: 1px;
     position: relative;
 }
@@ -146,4 +149,120 @@ header h1{
     height: 180px;
     position: absolute;
     color:#373867;
+    list-style-type: disc;
+}
+
+#why-trackgenix{
+    padding: 50px;
+    margin-left: 288px;
+    height: 1000px;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+#why-trackgenix h3{
+    float: center;
+    color: #373867;
+    margin-left: 1px;
+    padding: 4px;
+    font-size: 20px;
+    border-bottom: 4px solid #373867;
+}
+
+#why-trackgenix img {
+    width: 400px;
+    height: 170px;
+    margin: 0px 56px;
+    border: 0.7px solid #373867;
+    border-radius: 17px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+#why-trackgenix .p {
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+    margin: 0px 94px;
+    width: 320px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+
+#why-trackgenix h4 {
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#container, #container-pair {
+    padding: 40px 0px;
+}
+
+#container-pair {
+    border-bottom: 0.7px solid #373867;
+    border-top: 0.7px solid #373867;
+}
+
+article {
+    margin: 80px 0px 65px 0px;
+    height: 600px;
+}
+
+#contact div {
+    margin: 30px 0px;
+}
+
+#contact label {
+    display: block;
+    padding-bottom: 1px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#contact input, select {
+    width: 277px;
+    height: 30px;
+    padding: 0px 15px;
+    border: 0.7px solid #373867;
+    border-radius: 3px;
+    color: #373867;
+}
+
+#contact{
+    padding: 50px;
+    margin-left: 288px;
+    height: 280px;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+#contact span{
+    float: center;
+    color: #373867;
+    margin-left: 1px;
+    padding: 4px;
+    font-size: 20px;
+    border-bottom: 4px solid #373867;
+}
+
+footer {
+    margin: 18px 0px;
+    text-align: center;
+}
+
+footer a {
+    padding: 0px 8px;
+    text-decoration: none;
+}
+
+#get-in-touch{
+    padding: 50px;
+    margin-left: 288px;
+    height: 300px;
+    margin-bottom: 1px;
+    position: relative;
 }

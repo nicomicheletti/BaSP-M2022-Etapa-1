@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix SA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Css/reset.css">
         <link rel="stylesheet" href="Css/style.css">
     </head>
@@ -14,6 +18,14 @@
             <button type="submit">
                 <img src="Images/search-bottom.png" width="10">
             </button>
+            <div class="nav-buttons">
+                <button class="log-in">
+                    Log in
+                </button>
+                <button class="sign-up">
+                    Sign up
+                </button>
+            </div>
             <nav>
                 <ol>
                     <div class="menu-sidebar">
@@ -76,6 +88,9 @@
                 </p>
                 <img src="Images/img1.png" width="400" />
             </section>
+            <div>
+                .
+            </div>
             <section id="our-history">
                 <h2>
                     Our history
@@ -121,55 +136,61 @@
                 <h3>
                     WHY TRACKGENIX?
                 </h3>
-                <img src="Images/img3.png" width="300" />
-                <h4>
-                    Subheader
-                </h4>
-                <p>
-                    Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
-                    industry's standard dummy text ever since the 1500s.
-                </p>
-                <button type="button">
-                    Learn more
-                </button>
-                <h4>
-                    Subheader
-                </h4>
-                <p>
-                    Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
-                    industry's standard dummy text ever since the 1500s.
-                </p>
-                <button type="button">
-                    Learn more
-                </button>
-                <img src="Images/img3.png" width="300" />
-                <img src="Images/img3.png" width="300" />
-                <h4>
-                    Subheader
-                </h4>
-                <p>
-                    Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
-                    industry's standard dummy text ever since the 1500s.
-                </p>
-                <button type="button">
-                    Learn more
-                </button>
-                <h4>
-                    Subheader
-                </h4>
-                <p>
-                    Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
-                    industry's standard dummy text ever since the 1500s.
-                </p>
-                <button type="button">
-                    Learn more
-                </button>
-                <p>
+                <div id="container">
                     <img src="Images/img3.png" width="300" />
-                </p>
+                    <h4>
+                        Subheader
+                    </h4>
+                    <p>
+                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
+                        industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <button type="button">
+                        Learn more
+                    </button>
+                </div>  
+                <div id="container2">  
+                    <h4>
+                        Subheader
+                    </h4>
+                    <p>
+                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
+                        industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <button type="button">
+                        Learn more
+                    </button>
+                    <img src="Images/img3.png" width="300" />
+                </div>
+                <div id="container">
+                    <img src="Images/img3.png" width="300" />
+                    <h4>
+                        Subheader
+                    </h4>
+                    <p>
+                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
+                        industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <button type="button">
+                        Learn more
+                    </button>
+                </div>  
+                <div id="container2">  
+                    <h4>
+                        Subheader
+                    </h4>
+                    <p>
+                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the 
+                        industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <button type="button">
+                        Learn more
+                    </button>
+                    <img src="Images/img3.png" width="300" />
+                </div>
             </section>
             <article id="contact">
-                <span id="contact-us">
+                <span>
                     CONTACT US
                 </span>
                 <form>
@@ -186,15 +207,24 @@
                     </div>
                     <input id="email" name="email" placeholder="Insert your email" />
                 </form>
-                <div>
-                    <label for="contact-area">
-                        Contact area:
+                <div id="category">
+                    <label for="category">
+                        Category:
                     </label>
                 </div>
-                <select name="contact-area" id="contact-area">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                <select name="category" id="category">
+                    <option value="option1">
+                        Quality Assurance
+                    </option>
+                    <option value="option2">
+                        Developer
+                    </option>
+                    <option value="option3">
+                        Project Manager
+                    </option>
+                    <option value="option4">
+                        Human Resources
+                    </option>
                 </select>
                 <form>
                     <div>
@@ -211,7 +241,7 @@
                 </form>
             </article>
         </main>
-        <footer id="get-in-touch">
+        <section id="get-in-touch">
             <div>
                 <span>
                     TRACKGENIX
@@ -268,6 +298,8 @@
                     Contact
                 </li>
             </ol>
+        </section>
+        <footer>    
             <div>
                 <a target="_blank" href="https://www.twitter.com">
                     <img src="Images/twitter-logo.png" width="50" /> 
