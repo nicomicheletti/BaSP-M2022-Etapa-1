@@ -17,7 +17,7 @@ body p{
 #sidebar{
     float: left;
     width: 288px;
-    height: 3300px;
+    height: 2955px;
     background-color: #B1B2B6;
     color:  #373867;
     padding: 20px 16px;
@@ -26,14 +26,34 @@ body p{
     font-style: normal;
 }
 
+.log-in {
+    background: #49A37B;
+    color: #FFFFFF;
+}
+
+.sign-up {
+    background: #373867;
+    color: #FFFFFF;
+}
+
 .menu-sidebar{
     padding-top: 90px;
     padding-bottom: 15px;
+    height: 350px;
+}
+
+.menu-border{
+    border-bottom: 2px solid #49A37B;
+}
+
+.get-in-touch-border{
+    border-bottom: 2px solid #49A37B;
 }
 
 header{
     padding: 23px;
-    height: 50px;    
+    height: 40px;
+    margin-left: 288px;
     border-bottom: 4px solid #373867;
 }
 
@@ -41,7 +61,7 @@ header h1{
     float: center;
     color: #373867;
     padding: 4px;
-    font-size: 36px;
+    font-size: 46px;
 }
 
 #main{
@@ -54,10 +74,10 @@ header h1{
 
 #homepage h2{
     top: 80px;
-    left: 75px;
+    left: 85px;
     width: 420px;
     height: 200px;
-    position: absolute;
+    position: relative;
 }
 
 #main p{
@@ -177,6 +197,7 @@ header h1{
     border-radius: 17px;
     box-sizing: border-box;
     object-fit: cover;
+    border-bottom: 1px solid #373867;
 }
 
 #txt {
@@ -189,6 +210,7 @@ header h1{
     font-size: 15px;
     line-height: 22px;
     text-align: center;
+    border-bottom: 1px solid #373867;
 }
 
 #why-trackgenix h4 {
@@ -198,13 +220,18 @@ header h1{
     line-height: 18px;
 }
 
+.button {
+    background: #AACE9B;
+    color: #373867;
+}
+
 #container, #container-pair {
     padding: 40px 0px;
 }
 
 #container-pair {
-    border-bottom: 0.7px solid #373867;
-    border-top: 0.7px solid #373867;
+    border-bottom: 1px solid #373867;
+    border-top: 1px solid #373867;
 }
 
 #contact{
@@ -216,8 +243,8 @@ header h1{
 }
 
 #contact span{
-    float: center;
     color: #373867;
+    width: 1000px;
     margin-left: 1px;
     padding: 4px;
     font-size: 20px;
@@ -247,7 +274,7 @@ header h1{
 footer {
     margin: 18px 0px;
     text-align: center;
-    height: 100px;
+    height: 25px;
     margin-bottom: 1px;
 }
 
@@ -259,10 +286,25 @@ footer a {
 #get-in-touch{
     padding: 50px;
     margin-left: 288px;
-    height: 300px;
+    height: 150px;
     margin-bottom: 1px;
     position: relative;
     background-size: contain;
     background-color: #373867;
     color: #FFFFFF;
+}
+
+#get-in-touch .subtitle{
+    display: inline-block;
+    position: relative;
+    left: 280px;
+    width: 20%;
+    margin-bottom: 36px;
+}
+
+#get-in-touch ol{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
 }
