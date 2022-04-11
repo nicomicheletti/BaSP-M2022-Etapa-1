@@ -5,16 +5,16 @@ body {
     line-height: 22px;
 }
 
-body h2{
+body h2 {
     font-size: 30px;
     color: #49A37B;
 }
 
-body p{
+body p {
     font-size: 20px;
 }
 
-#sidebar{
+#sidebar {
     float: left;
     width: 288px;
     height: 2955px;
@@ -36,35 +36,35 @@ body p{
     color: #FFFFFF;
 }
 
-.menu-sidebar{
+.menu-sidebar {
     padding-top: 90px;
     padding-bottom: 15px;
     height: 350px;
 }
 
-.menu-border{
+.menu-border {
     border-bottom: 2px solid #49A37B;
 }
 
-.get-in-touch-border{
+.get-in-touch-border {
     border-bottom: 2px solid #49A37B;
 }
 
-header{
+header {
     padding: 23px;
     height: 40px;
     margin-left: 288px;
     border-bottom: 4px solid #373867;
 }
 
-header h1{
+header h1 {
     float: center;
     color: #373867;
     padding: 4px;
     font-size: 46px;
 }
 
-#main{
+#main {
     padding: 50px;
     margin-left: 288px;
     height: 200px;
@@ -72,7 +72,7 @@ header h1{
     position: relative;
 }
 
-#homepage h2{
+#homepage h2 {
     top: 80px;
     left: 85px;
     width: 420px;
@@ -80,7 +80,7 @@ header h1{
     position: relative;
 }
 
-#main p{
+#main p {
     top: 130px;
     left: 75px;
     width: 440px;
@@ -89,13 +89,13 @@ header h1{
     color:#373867;
 }
 
-#main img{
+#main img {
     top: 50px;
     left: 550px;
     position: absolute;
 }
 
-#our-history{
+#our-history {
     padding: 50px;
     margin-left: 288px;
     height: 200px;
@@ -103,7 +103,7 @@ header h1{
     position: relative;    
 }
 
-#our-history h2{
+#our-history h2 {
     top: 80px;
     left: 550px;
     width: 420px;
@@ -111,7 +111,7 @@ header h1{
     position: absolute;
 }
 
-#our-history p{
+#our-history p {
     top: 150px;
     left: 550px;
     width: 440px;
@@ -120,13 +120,13 @@ header h1{
     color:#373867;
 }
 
-#our-history img{
+#our-history img {
     top: 100px;
     left: 75px;
     position: absolute;
 }
 
-#our-history span{
+#our-history span {
     top: 270px;
     left: 710px;
     text-align: center;
@@ -138,7 +138,7 @@ header h1{
     position: absolute;
 }
 
-#features{
+#features {
     padding: 50px;
     margin-left: 288px;
     height: 150px;
@@ -146,7 +146,7 @@ header h1{
     position: relative;
 }
 
-#features h3{
+#features h3 {
     float: center;
     color: #373867;
     margin-left: 1px;
@@ -155,7 +155,7 @@ header h1{
     border-bottom: 4px solid #373867;
 }
 
-#features p{
+#features p {
     top: 100px;
     left: 75px;    
     height: 180px;
@@ -163,7 +163,7 @@ header h1{
     color:#373867;
 }
 
-#features ul{
+#features ul {
     top: 150px;
     left: 150px;    
     height: 180px;
@@ -172,7 +172,7 @@ header h1{
     list-style-type: disc;
 }
 
-#why-trackgenix{
+#why-trackgenix {
     padding: 50px;
     margin-left: 288px;
     height: 800px;
@@ -180,7 +180,7 @@ header h1{
     position: relative;
 }
 
-#why-trackgenix h3{
+#why-trackgenix h3 {
     float: center;
     color: #373867;
     margin-left: 1px;
@@ -234,7 +234,7 @@ header h1{
     border-top: 1px solid #373867;
 }
 
-#contact{
+#contact {
     padding: 50px;
     margin-left: 288px;
     height: 650px;
@@ -242,7 +242,7 @@ header h1{
     position: relative;
 }
 
-#contact span{
+#contact span {
     color: #373867;
     width: 1000px;
     margin-left: 1px;
@@ -283,7 +283,7 @@ footer a {
     text-decoration: none;
 }
 
-#get-in-touch{
+#get-in-touch {
     padding: 50px;
     margin-left: 288px;
     height: 150px;
@@ -294,7 +294,7 @@ footer a {
     color: #FFFFFF;
 }
 
-#get-in-touch .subtitle{
+#get-in-touch .subtitle {
     display: inline-block;
     position: relative;
     left: 280px;
@@ -302,7 +302,7 @@ footer a {
     margin-bottom: 36px;
 }
 
-#get-in-touch ol{
+#get-in-touch ol {
     display: inline-block;
     font-weight: 400;
     font-size: 15px;
