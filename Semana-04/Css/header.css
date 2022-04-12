@@ -1,0 +1,19 @@
+h1 {
+    padding: 6% 0 1% 0;
+    margin: 0 6%;
+    text-align:center;
+    border-bottom: 3.7px solid #373867;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #373867;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        text-align: justify;
+        border-bottom: 5px solid #373867;
+        font-size: 60px;
+        line-height: 70px;
+    }
+}

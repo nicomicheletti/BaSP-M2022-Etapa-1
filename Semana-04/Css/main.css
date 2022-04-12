@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+main h3 {
+    margin: 0 16%;
+    border-bottom: 3.7px solid #373867;
+    color: #373867;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main img {
+    min-width: 30%;
+}
+
+.contact span {
+    margin: 0 16%;
+    border-bottom: 3.7px solid #373867;
+    color: #373867;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
