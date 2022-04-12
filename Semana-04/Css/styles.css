@@ -4,3 +4,9 @@ body {
     color: #373867;
     overflow-x: hidden;
 }
+
+@media only screen and (min-width: 1024px) {
+    header, main, footer {
+        margin-left: 17%;
+    }
+}

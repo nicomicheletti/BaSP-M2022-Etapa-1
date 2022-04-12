@@ -16,11 +16,107 @@ main h3 {
 }
 
 main img {
-    min-width: 30%;
+    min-width: 20%;
+}
+
+.what-is-trackgenix h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #49A37B;
+}
+
+.our-history h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #49A37B;
+}
+
+.what-is-trackgenix, .our-history {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.what-is-trackgenix, .our-history img {
+    margin-bottom: 20px;
+    flex: 45;
+}
+
+.our-history span {
+    padding: 7px 0px;
+    display: block;
+    margin: 13px auto;
+    width: 80px;
+    background: #AACE9B;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 9px;
+    color: #373867;
+}
+
+.features p {
+    margin: 3% 8%;
+    text-align: justify;
+}
+
+.features ul {
+    margin: 3% 9%;    
+    font-size: 14px;
+    line-height: 20px;
+    list-style: disc;
+}
+
+.container, .container2{
+    margin: 23px 60px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container2 {
+    padding: 23px 0px;
+    border-bottom: 0.7px solid #373867;
+    border-top: 0.7px solid #373867;
+}
+
+.why-trackgenix .txt {    
+    font-size: 14px;
+    align-self:center;
+}
+
+.why-trackgenix h4 {
+    font-weight: 700;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.why-trackgenix img {
+    display: flex;    
+    border-radius: 10px;    
+}
+
+.button {
+    padding: 7px 0px;
+    display: block;
+    margin: 13px auto;
+    width: 80px;
+    background: #AACE9B;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 9px;
+    color: #373867;
 }
 
 .contact span {
-    margin: 0 16%;
+    margin: 0 25%;
     border-bottom: 3.7px solid #373867;
     color: #373867;
     font-weight: 700;
@@ -29,3 +125,117 @@ main img {
     text-transform: uppercase;
     text-align: center;
 }
+
+.contact form {
+    margin: 10px 37px 30px 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    padding: 10px 36px;
+    border-radius: 3px;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #373867;
+}
+
+.send-message {
+    background: #AACE9B;
+}
+
+.reset {
+    background: #ccc3c3;
+}
+
+.get-in-touch {
+    background-color: #373867;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header span {
+    display: none;
+    top: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.get-in-touch div {
+    margin: 10px;
+}
+
+.subtitle h5 {
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.get-in-touch div ol {
+    list-style: decimal ;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        margin-right: 6%;
+        margin-left: 20%;
+    }
+
+
+    main > div, .why-trackgenix > div {
+        flex-direction: row;
+    }
+
+    .txt, .our-history img {
+        margin-right: 6%;
+    } 
+
+    .why-trackgenix .txt, .why-trackgenix img {
+        /* margin: 20px; */
+        max-width: 40%;
+    }
+
+    .our-history img, .container2 .txt {
+        order: unset;
+    }
+         
+    main h3 {
+        border-bottom: 5px solid #373867;
+        margin: 0 6%;
+        text-align: justify;
+    }
+
+    .contact form {
+        width: 40%;
+        margin: 3% 0 3% 6%;
+    }
+
+    .our-history a {
+        text-align: center;
+        margin: 13px 0;
+    }
+
+    .get-in-touch span {
+        display: block;   
+    }
+
+    .get-in-touch div {
+        margin-top: 70px;
+    }
+
+    .get-in-touch div ol, .get-in-touch h5 {
+        font-size: 15px; 
+    }
+
+  }

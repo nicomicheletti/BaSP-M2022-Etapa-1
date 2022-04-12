@@ -1,0 +1,9 @@
+footer {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+footer a {
+    padding: 0px 7px;
+    text-decoration: none;
+}
