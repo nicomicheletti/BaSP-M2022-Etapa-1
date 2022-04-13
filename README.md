@@ -16,4 +16,6 @@ This week we implemented CSS to our html file and styled it differently. That wa
 ### Week 04
 This week, we continue working on our html base and with the application of styles. This time we made our page responsive. We also created Github Pages to visualize our project.
 
+Link to my page: "https://nicomicheletti.github.io/BaSP-M2022-Etapa-1/Semana-04/"
+
 _By Nicolás Micheletti_

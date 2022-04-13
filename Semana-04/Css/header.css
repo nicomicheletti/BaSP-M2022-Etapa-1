@@ -8,12 +8,3 @@ h1 {
     line-height: 60px;
     color: #373867;
 }
-
-@media only screen and (min-width: 768px) {
-    h1 {
-        text-align: justify;
-        border-bottom: 5px solid #373867;
-        font-size: 60px;
-        line-height: 70px;
-    }
-}
