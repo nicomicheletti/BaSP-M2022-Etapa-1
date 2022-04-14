@@ -18,4 +18,10 @@ This week, we continue working on our html base and with the application of styl
 
 Link to my page: "https://nicomicheletti.github.io/BaSP-M2022-Etapa-1/Semana-04/"
 
+### Week 05
+Now we start learning the JavaScript language. For that we will perform exercises to be able to apply the acquired knowledge.
+The activity consists of 6 exercises that contain several items related to: variables and operators, strings, arrays, if and else, for and functions.
+
+Link to my page: "https://nicomicheletti.github.io/BaSP-M2022-Etapa-1/Semana-05/"
+
 _By Nicolás Micheletti_
