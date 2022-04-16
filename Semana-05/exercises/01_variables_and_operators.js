@@ -27,7 +27,7 @@ console.log('My last name is: ', lastName);
 console.log('My full name is: ',nameAndLastName);
 console.log(' ')
 
-/*Create two String variables and add the length of each variable (number of letters of the string)
+/*c. Create two String variables and add the length of each variable (number of letters of the string)
 saving the result of the sum in a 3rd variable (use length).*/
 
 var team1 = "Barcelona";
@@ -38,3 +38,4 @@ console.log('-Exercise 1.c:');
 console.log('Barcelona has this number of letters: ', team1.length)
 console.log('Espanyol has this number of letters: ', team2.length)
 console.log('The sum of boths is: ', result3.length)
+console.log(' ')
