@@ -1,4 +1,4 @@
-console.log('--EXERCISE 3: IF-ELSE');
+console.log('--EXERCISE 4: IF-ELSE');
 
 //4. If else
 
