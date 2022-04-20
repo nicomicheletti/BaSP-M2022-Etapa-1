@@ -11,7 +11,7 @@ console.log('Ready as an alert');
 
 var numberRandom = Math.random();
 
-if (numberRandom >= 0,5) {
+if (numberRandom >= 0.5) {
     alert("Greater than 0.5");
 } else {
     alert("Lower than 0.5");

@@ -40,7 +40,7 @@ for (var i = 0; i < 5; i++) {
     sentence = sentence + days[i];
 }
 
-console.log(sentence);
+alert(sentence);
 console.log(' ');
 
 /*d. Create an empty array with a for loop of 10 repetitions. 
