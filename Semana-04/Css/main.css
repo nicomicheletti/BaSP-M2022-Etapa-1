@@ -72,16 +72,16 @@ main img {
 }
 
 .our-history span {
-    padding: 7px 0px;
     display: block;
+    padding: 7px 0px;
     margin: 13px auto;
     width: 80px;
     background: #AACE9B;
-    text-decoration: none;
-    text-align: center;
     border-radius: 5px;
     font-weight: 500;
     font-size: 9px;
+    text-decoration: none;
+    text-align: center;
     color: #373867;
 }
 
@@ -124,8 +124,7 @@ main img {
 }
 
 
-.why-trackgenix img {
-    display: flex;    
+.why-trackgenix img { 
     border-radius: 10px;    
 }
 
@@ -155,6 +154,18 @@ main img {
 
 .contact form {
     margin: 10px 37px 30px 30px;
+}
+
+#name {
+    margin-bottom: 5px;
+}
+
+#email {
+    margin-bottom: 5px;
+}
+
+#category {
+    margin-bottom: 5px;
 }
 
 .buttons {

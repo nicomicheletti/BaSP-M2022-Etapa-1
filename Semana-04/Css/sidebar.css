@@ -7,6 +7,12 @@
     background-color: #B1B2B6;
 }
 
+#search {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .log-in {
     margin-left: 5px;    
     background: #49A37B;
