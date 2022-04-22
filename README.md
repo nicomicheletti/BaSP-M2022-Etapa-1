@@ -24,4 +24,10 @@ The activity consists of 6 exercises that contain several items related to: vari
 
 Link to my page: "https://nicomicheletti.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html"
 
+### Week 06
+A new week begins, in this case the activity consists of taking the one done in week 4 incorporating the use of Javascrip and DOM management.
+
+Link to the repository: "https://github.com/nicomicheletti/BaSP-M2022-Etapa-1"
+Link to my page: "https://nicomicheletti.github.io/BaSP-M2022-Etapa-1/Semana-06/index.html"
+
 _By Nicolás Micheletti_
