@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/sidebar.css">
         <link rel="stylesheet" href="../styles/main.css">
-        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/employee-signup.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/styles.css">
-        <script src="../javascript/login.js"></script>
+        <script src="../javascript/employee-signup.js"></script>
         <title>Trackgenix - Login</title>
     </head>
     <body>
@@ -31,9 +31,7 @@
                     </a>
                 </button>
                 <button class="sign-up">
-                    <a href=employee-signup.html>
-                        Sign Up
-                    </a>
+                    Sign up
                 </button>
             </div>
             <nav>
@@ -91,27 +89,29 @@
                 Trackgenix SA
             </h1>
         </header>
-        <div class="page-content">
-            <div class="login">
-                <h2>Login</h2>
-                <form class="login-form">
-                    <div class="status-control">
-                        <label>Email *</label>
-                        <input type="email" placeholder="Insert your email">
-                        <p>Error message</p>
-                    </div>
-                    <div class="status-control success">
-                        <label>Password *</label>
-                        <input type="password" placeholder="************">
-                        <p>Error message</p>
-                    </div>
-                    <button type="submit" id="btn-login">Login</button>
-                    <a href="#">Lost your password?</a>
-                    <a href="#">Sign Up</a>
-                    <a href="index.html">Go back</a>
-                </form>
-            </div>
-        </div> 
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Name" id="name">
+                <input type="text" placeholder="Surname" id="surname">
+                <input type="number" placeholder="DNI" id="dni">
+                <input type="date" placeholder="Date of birth" id="dob">
+                <input type="number" placeholder="Phone number" id="phone-number">
+                <input type="text" placeholder="Address" id="address">
+                <input type="text" placeholder="City" id="city">
+                <input type="number" placeholder="ZIP code" id="zip">
+                <div id="email-password">
+                    <input type="email" placeholder="Email" id="email">
+                    <input type="password" placeholder="Password" id="password">
+                    <input type="password" placeholder="Repeat password" id="rep-password">
+                </div>
+                <button type="submit" id="btn-signup">Sign up</button>
+                <button class="create-btn">
+                    Create
+                </button>
+                <a href="index.html">Go back</a>
+            </form>
+        </div>
         <main>
             <section class="get-in-touch">
                 <div class="header">
