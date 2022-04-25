@@ -1,7 +1,5 @@
 window.onload = function() {
 
-    // containsNumber? function.
-
     function containsNumber(val) {
         var numbers = [0,1,2,3,4,5,6,7,8,9];
         var num = 0;
@@ -14,8 +12,6 @@ window.onload = function() {
         }
         return num;
     }
-
-    // Name and Surname valids.
 
     var signUpName = document.getElementById('name');
     var signUpSurname = document.getElementById('surname');
@@ -55,8 +51,6 @@ window.onload = function() {
     function validateSurnameF() {
         surnameInlineAlert.remove();
     }
-
-    // DNI, phone number and ZIP code valids.
 
     var signUpDni = document.getElementById('dni');
     var signUpPhone = document.getElementById('phone-number');
@@ -116,8 +110,6 @@ window.onload = function() {
         zipInlineAlert.remove();
     }
 
-    // Date of birth valid.
-
     var signUpDob = document.getElementById('dob');
     var dobInlineAlert = document.createElement('p');
     dobInlineAlert.textContent = "";
@@ -137,8 +129,6 @@ window.onload = function() {
     function validateDobF() {
         dobInlineAlert.remove();
     }
-
-    // Address and city valids.
 
     var signUpAddress = document.getElementById('address');
     var signUpCity = document.getElementById('city');
@@ -195,8 +185,6 @@ window.onload = function() {
     function validateCityF() {
         cityInlineAlert.remove();
     }
-
-    // Email, password and Repeat password valids.
 
     var signUpEmail = document.getElementById('email');
     var signUpPassword = document.getElementById('password');
@@ -257,7 +245,7 @@ window.onload = function() {
         repPasswordInlineAlert.remove();
     }
 
-    var continueBtn = document.getElementById('continue-btn');
+    var continueBtn = document.getElementById('submit');
     continueBtn.addEventListener('click', btn);
 
     function btn() {

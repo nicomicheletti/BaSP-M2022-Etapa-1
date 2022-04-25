@@ -24,7 +24,7 @@
 .login-form label {
     display: block;
     padding-bottom: 3px;
-    text-align: justify;
+    text-align: center;
     font-weight: 500;
     font-size: 14px;
 }
@@ -86,4 +86,37 @@
 .login a {
     display: block;
     text-decoration: none;
+}
+
+.get-in-touch {
+    background-color: #373867;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header span {
+    display: none;
+    top: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.get-in-touch div {
+    margin: 10px;
+}
+
+.subtitle h5 {
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.get-in-touch div ol {
+    list-style: decimal ;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
 }

@@ -55,11 +55,10 @@
 }
 
 .get-in-touch {
-    margin-top: 340px;
-    background-color: #373867;
-    color: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
+    background-color: #373867;
+    color: #FFFFFF;
 }
 
 .header span {
@@ -86,4 +85,14 @@
     font-weight: 400;
     font-size: 11px;
     line-height: 22px;
+}
+
+form p {
+    color: red;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
