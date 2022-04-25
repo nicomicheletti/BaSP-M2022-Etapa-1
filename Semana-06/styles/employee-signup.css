@@ -6,7 +6,7 @@
     text-align: center;
     padding: 32px;
 }
-    
+
 .signup-container h2 {
     background-color: #AACE9B;
     border-radius: 15px 15px 0 0;
@@ -18,14 +18,72 @@
     text-transform: uppercase;
 }
 
-.signup-container button {
+.signup-container form {
+    display: inline;
+    padding: 2% 0% 8% 0%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.signup-container input {
     display: block;
-    margin: 15px auto;
-    padding: 14px 56px;
-    border-radius: 3.7px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1px auto 10px auto;
+    padding: 5px;
+    border: 0.60px solid #37386733;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.signup-container div {
+    min-width: 20%;
+    margin: 0% 3%;
+}
+
+#submit {
+    display: block;
+    margin: 8px auto 3px auto;
+    padding: 10px;
     border: none;
-    font-weight: 500;
-    font-size: 16px;
-    color: #373867;
-    background: #AACE9B;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    font-weight: bold;
+    font-size: 17px;
+    font-weight: bold;
+    color: #373867CC;
+}
+
+.get-in-touch {
+    margin-top: 340px;
+    background-color: #373867;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header span {
+    display: none;
+    top: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.get-in-touch div {
+    margin: 10px;
+}
+
+.subtitle h5 {
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.get-in-touch div ol {
+    list-style: decimal ;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
 }

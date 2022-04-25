@@ -19,6 +19,12 @@ main img {
     min-width: 20%;
 }
 
+.sign-up a:visited {
+    color: rgb(253, 253, 253);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
 .what-is-trackgenix {
     display: flex;
     flex-wrap: wrap;

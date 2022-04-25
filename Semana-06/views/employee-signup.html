@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="../styles/reset.css">
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/sidebar.css">
-        <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/employee-signup.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/styles.css">
@@ -92,24 +91,69 @@
         <div class="signup-container">
             <h2>Sign Up</h2>
             <form>
-                <input type="text" placeholder="Name" id="name">
-                <input type="text" placeholder="Surname" id="surname">
-                <input type="number" placeholder="DNI" id="dni">
-                <input type="date" placeholder="Date of birth" id="dob">
-                <input type="number" placeholder="Phone number" id="phone-number">
-                <input type="text" placeholder="Address" id="address">
-                <input type="text" placeholder="City" id="city">
-                <input type="number" placeholder="ZIP code" id="zip">
-                <div id="email-password">
-                    <input type="email" placeholder="Email" id="email">
-                    <input type="password" placeholder="Password" id="password">
-                    <input type="password" placeholder="Repeat password" id="rep-password">
+                <div class="label-input">
+                    <label>Name</label>
+                    <input id="name" type="text" placeholder="Name.." class="inputs">
                 </div>
-                <button type="submit" id="btn-signup">Sign up</button>
-                <button class="create-btn">
-                    Create
-                </button>
-                <a href="index.html">Go back</a>
+                <div class="label-input">
+                    <label>Surname</label>
+                    <input id="surname" type="text" placeholder="Surname.." class="inputs">
+                </div>
+                <div class="label-input">
+                    <label>DNI</label>
+                    <input id="dni" type="text" placeholder="12345678" class="inputs">
+                </div>
+                <div class="label-input">
+                    <label for="birth-date">Date of birth</label>
+                    <input id="dob" type="text" placeholder="dd/mm/yyyy" class="inputs">
+                </div>
+                <div class="label-input">
+                    <label>Phone number</label>
+                    <input id="phone-number" type="text" placeholder="+5493411111111" class="inputs">
+                </div>
+                <div class="label-input">
+                    <label>Address</label>
+                    <input id="address" type="text" placeholder="example 123" class="inputs">
+                </div>
+                <div class="label-input">
+                    <label>City</label>
+                    <input id="city" type="text" placeholder="Rosario" class="inputs">
+                </div>
+                <div class="label-input">
+                    <label>ZIP code</label>
+                    <input id="zip" type="text" placeholder="0000" class="inputs">
+                </div>
+                <div id="email-password">
+                    <div class="label-input">
+                        <label>Email</label>
+                        <input id="email" type="text" placeholder="example@myemail.com" class="inputs">
+                    </div>
+                    <div class="label-input">
+                        <label>Password</label>
+                        <input id="password" type="text" placeholder="*********" class="inputs">
+                    </div>
+                    <div class="label-input">
+                        <label>Repeat password</label>
+                        <input id="rep-password" type="text" placeholder="*********" class="inputs">
+                    </div>
+                </div>  
+                <div class="continue-btn">
+                    <button id="submit" type="submit">Create</button>
+                </div>
+                <div class="login-btn">
+                    <button id="submit" type="submit">
+                        <a href=login.html>
+                            Login
+                        </a>
+                    </button>
+                </div>
+                <div class="go-back-btn">
+                    <button id="submit" type="submit">                        
+                        <a href=index.html>
+                            Go back
+                        </a>
+                    </button>
+                </div>
             </form>
         </div>
         <main>

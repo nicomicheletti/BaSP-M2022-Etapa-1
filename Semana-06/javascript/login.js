@@ -25,7 +25,7 @@ window.onload = function () {
         reset(password);
     })
     
-    // funcion validacion
+    // function validation
     function validation (type) {
         if (type == email) {
             if (email.value === '') {
