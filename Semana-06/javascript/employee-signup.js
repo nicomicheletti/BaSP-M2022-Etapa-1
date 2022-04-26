@@ -264,7 +264,7 @@ window.onload = function() {
             signUpAddress.value+'   City: '+signUpCity.value+'   ZIP code: '+signUpZip.value+'   Email: '+
             signUpEmail.value+'  Password: '+signUpPassword.value);
         } else {
-            alert('Incorrect login');
+            alert('Incorrect signup');
         }
     }
 }
