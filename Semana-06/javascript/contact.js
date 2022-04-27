@@ -6,13 +6,11 @@ window.onload = function(){
     var options = document.querySelector('select');
     var sendButton = document.getElementById('send-message');
     var resetButton = document.getElementById('btn-reset');
-
     var emailFormat = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 
     name.addEventListener('blur', function() {
         checkName();
     });
-
     name.addEventListener('focus', function() {
         reset(name);
     });
@@ -20,7 +18,6 @@ window.onload = function(){
     email.addEventListener('blur', function() {
         checkEmail();
     });
-
     email.addEventListener('focus', function() {
         reset(email);
     });
@@ -28,7 +25,6 @@ window.onload = function(){
     message.addEventListener('blur', function() {  
         checkMessage();
     });
-
     message.addEventListener('focus', function() {
         reset(message);
     });
@@ -40,7 +36,7 @@ window.onload = function(){
         };
     };
 
-    function formatValidator (string) {
+    function corroboration (string) {
         string = string.split(" ").join(""); 
         var control = 0;
         for (var i=0; i < string.length; i++) {
@@ -55,7 +51,7 @@ window.onload = function(){
         };
     };
 
-    function isASymbol (string) {
+    function symbolCheck (string) {
         var symbols = '!"#$%&/()=?¡¿|¨*][_:;,.-{}+¬°~^`@'+"'";
         var control = 0;
         for (var i=0; i < string.length; i++) {
@@ -78,7 +74,7 @@ window.onload = function(){
         } else if (name.value.length < 3) {
             showError(name,'It must contain at least 3 characters.');
             return 'Name too short.';
-        } else if (formatValidator(name.value) || isASymbol(name.value)) {
+        } else if (corroboration(name.value) || symbolCheck(name.value)) {
             showError(name,'Please insert a valid format. It must not contain numbers or symbols.');
             return 'Invalid name format';
         } else {
@@ -103,9 +99,6 @@ window.onload = function(){
         } else if (message.value.length < 3){
             showError(message,'It must contain at least 3 characters.');
             return 'The message is too short';
-        } else if (isASymbol(message.value)){
-            showError(message,'Please insert a valid message.');
-            return 'Invalid message format';
         } else {
             return '';
         };
