@@ -221,20 +221,20 @@
                     CONTACT US
                 </span>
                 <form class="contact-js">
-                    <div class="status-control">
+                    <div class="verification">
                         <label for="name">
                             Name
                         </label>
-                        <input type="name" placeholder="Insert your name">
+                        <input id="name" type="name" placeholder="Insert your name">
                         <p>
                             Error message
                         </p>
                     </div>
-                    <div class="status-control success">
+                    <div class="verification">
                         <label for="email">
                         Email
                         </label>
-                        <input type="email" placeholder="Insert your email">
+                        <input id="email" type="email" placeholder="Insert your email">
                         <p>
                             Error message
                         </p>
@@ -245,20 +245,17 @@
                         </label>
                     </div>
                     <select name="category" id="category">
-                        <option value="option1">
-                            Quality Assurance
+                        <option value="Human resources">
+                            Human resources
                         </option>
-                        <option value="option2">
-                            Developer
+                        <option value="Systems">
+                            Systems
                         </option>
-                        <option value="option3">
-                            Project Manager
-                        </option>
-                        <option value="option4">
-                            Human Resources
+                        <option value="Marketing">
+                            Marketing
                         </option>
                     </select>
-                    <div>
+                    <div class="verification">
                         <textarea cols="40" rows="8" id="comments" placeholder="Write us a message..." name="comments"></textarea>
                     </div>
                     <button type="submit" id="send-message">

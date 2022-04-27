@@ -183,16 +183,26 @@ main img {
     margin-bottom: 10px;
 }
 
-.status-control p {
+.verification p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 12px;
+    color: #F33413;
     visibility: hidden;
 }
 
-.status-control.error input {
-    border: solid 1px red;
+.contact .verification.done input, .contact .verification.done textarea {
+    border: solid 1px #F33413;
 }
 
-.status-control.error p {
+.verification.done p {
     visibility: visible;
+}
+
+.verification.done input {
+    color: #F33413;
 }
 
 #name {
