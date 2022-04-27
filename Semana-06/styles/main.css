@@ -147,6 +147,13 @@ main img {
     color: #373867;
 }
 
+.contact label {
+    display: block;
+    padding-bottom: 3px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
 .contact span {
     display: flex;
     margin: 0 5%;
@@ -160,6 +167,32 @@ main img {
 
 .contact form {
     margin: 10px 37px 30px 30px;
+}
+
+.login-form a, .login-form p {
+    opacity: 0.9;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.login-form p {
+    color: red;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.status-control p {
+    visibility: hidden;
+}
+
+.status-control.error input {
+    border: solid 1px red;
+}
+
+.status-control.error p {
+    visibility: visible;
 }
 
 #name {
@@ -188,7 +221,7 @@ main img {
     color: #373867;
 }
 
-.send-message {
+#send-message {
     background: #AACE9B;
 }
 

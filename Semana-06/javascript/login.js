@@ -59,7 +59,7 @@ window.onload = function () {
         e.preventDefault();
         validation(email);
         validation(password);
-        //alerts in case of error or success
+
         if (validation(email) || validation(password)) {
             alert('Please enter data correctly.');
         } else {

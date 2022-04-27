@@ -220,19 +220,25 @@
                 <span>
                     CONTACT US
                 </span>
-                <form>
-                    <div>
+                <form class="contact-js">
+                    <div class="status-control">
                         <label for="name">
                             Name
                         </label>
+                        <input type="name" placeholder="Insert your name">
+                        <p>
+                            Error message
+                        </p>
                     </div>
-                    <input id="name" name="name" placeholder="Insert your name" />
-                    <div>
+                    <div class="status-control success">
                         <label for="email">
                         Email
                         </label>
+                        <input type="email" placeholder="Insert your email">
+                        <p>
+                            Error message
+                        </p>
                     </div>
-                    <input id="email" name="email" placeholder="Insert your email" />
                     <div class="category">
                         <label for="category">
                             Category:
@@ -255,14 +261,12 @@
                     <div>
                         <textarea cols="40" rows="8" id="comments" placeholder="Write us a message..." name="comments"></textarea>
                     </div>
-                    <div class="buttons">
-                        <button class="send-message">
-                            Send Message
-                        </button>
-                        <button class="reset">
-                            Reset
-                        </button>
-                    </div>
+                    <button type="submit" id="send-message">
+                        Send Message
+                    </button>
+                    <button type="submit" id="btn-reset">
+                        Reset
+                    </button>                  
                 </form>
             </section>
             <section class="get-in-touch">
