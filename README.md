@@ -30,4 +30,12 @@ A new week begins, in this case the activity consists of taking the one done in 
 Link to the repository: "https://github.com/nicomicheletti/BaSP-M2022-Etapa-1"
 Link to my page: "https://nicomicheletti.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html"
 
+### Week 07
+Week 07 consists of extending the forms of week 06 so that when the confirmation buttons are pressed, the data loaded in them are sent to a web server by means of an HTTP request from JavaScript.
+In the request the form data are sent as "query-params".
+
+Link to the repository: "https://github.com/nicomicheletti/BaSP-M2022-Etapa-1"
+Link to my page: "https://nicomicheletti.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html"
+
+
 _By Nicolás Micheletti_
