@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #373867;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        text-align: justify;
+        border-bottom: 5px solid #373867;
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header, main, footer {
+        margin-left: 18%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        margin-right: 6%;
+        margin-left: 20%;
+    }
+
+
+    main > div, .why-trackgenix > div {
+        flex-direction: row;
+    }
+
+    .txt, .our-history img {
+        margin-right: 6%;
+    } 
+
+    .why-trackgenix .txt, .why-trackgenix img {
+        max-width: 40%;
+    }
+
+    .our-history img, .container2 .txt {
+        order: unset;
+    }
+         
+    main h3 {
+        border-bottom: 5px solid #373867;
+        margin: 0 6%;
+        text-align: justify;
+    }
+
+    .contact form {
+        width: 40%;
+        margin: 3% 0 3% 6%;
+    }
+
+    .our-history a {
+        text-align: center;
+        margin: 13px 0;
+    }
+
+    .get-in-touch span {
+        display: block;   
+    }
+
+    .get-in-touch div {
+        margin-top: 70px;
+    }
+
+    .get-in-touch div ol, .get-in-touch h5 {
+        font-size: 15px; 
+    }
+
+    .buttons {
+        display: inline;
+        justify-content: space-between;
+    }
+
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #sidebar {
+        display: inline;
+    }
+}

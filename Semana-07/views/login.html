@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <script src="../javascript/login.js"></script>
+        <title>Trackgenix - Login</title>
+    </head>
+    <body>
+        <section id="sidebar">
+            <input type="text" id="search" name="search" placeholder="search" />
+            <button type="submit">
+                <img src="../assets/search-bottom.png" width="10">
+            </button>
+            <div class="nav-buttons">
+                <button class="log-in">
+                    <a href="login.html">
+                    Log in
+                    </a>
+                </button>
+                <button class="sign-up">
+                    <a href=employee-signup.html>
+                        Sign Up
+                    </a>
+                </button>
+            </div>
+            <nav>
+                <ol>
+                    <div class="menu-sidebar">
+                        <li class="menu-border">
+                            MENU
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                Homepage
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#generic">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact-us">
+                                Why Trackgenix
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact-us">
+                                Contact Us
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="get-in-touch-border">
+                            <a href="#get-in-touch">
+                                GET IN TOUCH
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.outlook.com">
+                                mailinfo@trackgenix.com
+                            </a>
+                            <div>
+                            123-456789
+                            </div>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.google.com.ar/maps">
+                                123 fake road #2000 Rosario, Argentina
+                            </a>
+                        </li>
+                    </div>
+                </ol>
+            </nav>
+        </section>
+        <header>
+            <h1>
+                Trackgenix SA
+            </h1>
+        </header>
+        <div class="page-content">
+            <div class="login">
+                <h2>Login</h2>
+                <form class="login-form">
+                    <div class="status-control">
+                        <label>
+                            Email *
+                        </label>
+                        <input type="email" placeholder="Insert your email">
+                        <p>
+                            Error message
+                        </p>
+                    </div>
+                    <div class="status-control success">
+                        <label>
+                            Password *
+                        </label>
+                        <input type="password" placeholder="********">
+                        <p>
+                            Error message
+                        </p>
+                    </div>
+                    <button type="submit" id="btn-login">Login</button>
+                    <div id="checkbox">
+                        <input type="checkbox" name="remember-me">
+                        <label>
+                            Remember Me
+                        </label>
+                    </div>
+                    <a href="#">
+                        Lost your password?
+                    </a>
+                    <a href="employee-signup.html">
+                        Sign Up
+                    </a>
+                    <a href="index.html">
+                        Go back
+                    </a>
+                </form>
+            </div>
+        </div> 
+        <main>
+            <section class="get-in-touch">
+                <div class="header">
+                    <span>
+                        TRACKGENIX
+                    </span>
+                </div>
+                <div class="subtitle">
+                    <h5>
+                        Products
+                    </h5>                    
+                    <ol>
+                        <li>
+                            Features
+                        </li>
+                        <li>
+                            Downloads
+                        </li>
+                        <li>
+                            Integrations
+                        </li>
+                        <li>
+                            Extras
+                        </li>
+                    </ol>
+                </div>
+                <div class="subtitle">
+                    <h5>
+                        Company
+                    </h5>                
+                    <ol>
+                        <li>
+                            About us
+                        </li>
+                        <li>
+                            Clients
+                        </li>
+                        <li>
+                            Resources
+                        </li>
+                        <li>
+                            Blog
+                        </li>
+                    </ol>
+                </div>
+                <div class="subtitle">
+                    <h5>
+                        Support
+                    </h5>                
+                    <ol>
+                        <li>
+                            Help
+                        </li>
+                        <li>
+                            Tutorials
+                        </li>
+                        <li>
+                            API
+                        </li>
+                        <li>
+                            Contact
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a target="_blank" href="https://www.twitter.com">
+                <img src="../assets/twitter-logo.png" width="25" />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com">
+                <img src="../assets/linkedin-logo.png" width="25" />
+            </a>
+            <a target="_blank" href="https://www.github.com">
+                <img src="../assets/github-logo.png" width="25" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com">
+                <img src="../assets/instagram-logo.png" width="25" />
+            </a>
+            <a target="_blank" href="https://www.facebook.com">
+                <img src="../assets/facebook-logo.png" width="25" />
+            </a>
+        </footer>       
+    </body>
+</html>

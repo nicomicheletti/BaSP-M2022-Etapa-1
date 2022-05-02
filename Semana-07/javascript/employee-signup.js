@@ -30,8 +30,10 @@ window.onload = function() {
         if ((numm > 0) || (signUpName.value.length < 3)) {
             nameInlineAlert.textContent = "* Name is not valid.";
             signUpName.insertAdjacentElement('afterend', nameInlineAlert);
+            return false;
         } else {
             nameInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateNameF() {
@@ -44,8 +46,10 @@ window.onload = function() {
         if ((numm > 0) || (signUpSurname.value.length < 3)) {
             surnameInlineAlert.textContent = "* Surname is not valid.";
             signUpSurname.insertAdjacentElement('afterend', surnameInlineAlert);
+            return false;
         } else {
             surnameInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateSurnameF() {
@@ -74,8 +78,10 @@ window.onload = function() {
         if ((numm != signUpDni.value.length) || (signUpDni.value.length < 7)) {
             dniInlineAlert.textContent = "* DNI is not valid.";
             signUpDni.insertAdjacentElement('afterend', dniInlineAlert);
+            return false;
         } else {
             dniInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateDniF() {
@@ -88,8 +94,10 @@ window.onload = function() {
         if ((signUpPhone.value.length != numm) || (signUpPhone.value.length != 10)) {
             phoneInlineAlert.textContent = "* Phone is not valid.";
             signUpPhone.insertAdjacentElement('afterend', phoneInlineAlert);
+            return false;
         } else {
             phoneInlineAlert.textContent = "";
+            return true;
         }
     }
     function validatePhoneF() {
@@ -102,8 +110,10 @@ window.onload = function() {
         if ((signUpZip.value.length != numm) || (signUpZip.value.length < 4) || (signUpZip.value.length > 5)) {
             zipInlineAlert.textContent = "* ZIP code is not valid.";
             signUpZip.insertAdjacentElement('afterend', zipInlineAlert);
+            return false;
         } else {
             zipInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateZipF() {
@@ -118,12 +128,14 @@ window.onload = function() {
 
     function validateDobB() {
         if ((containsNumber(signUpDob) != 8) || (signUpDob.value[2] != '/') || (signUpDob.value[5] != '/') ||
-        (Number(signUpDob.value[0]+signUpDob.value[1]) > 12) || (Number(signUpDob.value[3]+signUpDob.value[4]) > 31)
+        (Number(signUpDob.value[0]+signUpDob.value[1]) > 31) || (Number(signUpDob.value[3]+signUpDob.value[4]) > 12)
         || (Number(signUpDob.value[6]+signUpDob.value[7]+signUpDob.value[8]+signUpDob.value[9]) > 2004)) {
             dobInlineAlert.textContent = "* Date of birth is not valid.";
             signUpDob.insertAdjacentElement('afterend', dobInlineAlert);
+            return false;
         } else {
             dobInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateDobF() {
@@ -163,8 +175,10 @@ window.onload = function() {
         if ((numm == 0) || (char == 0) || (signUpAddress.value.length < 5) || (spacee == 0)) {
             addressInlineAlert.textContent = "* Address is not valid.";
             signUpAddress.insertAdjacentElement('afterend', addressInlineAlert);
+            return false;
         } else {
             addressInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateAddressF() {
@@ -178,8 +192,10 @@ window.onload = function() {
         if (char < 3) {
             cityInlineAlert.textContent = "* City is not valid.";
             signUpCity.insertAdjacentElement('afterend', cityInlineAlert);
+            return false;
         } else {
             cityInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateCityF() {
@@ -207,8 +223,10 @@ window.onload = function() {
         if (!emailRegExp.test(signUpEmail.value)) {
             emailInlineAlert.textContent = "* Email is not valid.";
             signUpEmail.insertAdjacentElement('afterend', emailInlineAlert);
+            return false;
         } else {
             emailInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateEmailF() {
@@ -225,8 +243,10 @@ window.onload = function() {
         if ((numm == 0) || (char == 0) || (signUpPassword.value.length < 8)) {
             passwordInlineAlert.textContent = "* Password is not valid.";
             signUpPassword.insertAdjacentElement('afterend', passwordInlineAlert);
+            return false;
         } else {
             passwordInlineAlert.textContent = "";
+            return true;
         }
     }
     function validatePasswordF() {
@@ -237,8 +257,10 @@ window.onload = function() {
         if (signUpPassword.value != signUpRepPassword.value) {
             repPasswordInlineAlert.textContent = "* Password must be the same.";
             signUpPassword.insertAdjacentElement('afterend', repPasswordInlineAlert);
+            return false;
         } else {
             repPasswordInlineAlert.textContent = "";
+            return true;
         }
     }
     function validateRepPasswordF() {
