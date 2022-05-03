@@ -41,6 +41,20 @@
     margin: 0% 3%;
 }
 
+#continue-btn {
+    width: auto;
+    display: block;
+    margin: 8px auto 3px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    font-weight: bold;
+    font-size: 17px;
+    font-weight: bold;
+    color: #373867CC;
+}
+
 #submit {
     display: block;
     margin: 8px auto 3px auto;

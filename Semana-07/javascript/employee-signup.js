@@ -128,7 +128,7 @@ window.onload = function() {
 
     function validateDobB() {
         if ((containsNumber(signUpDob) != 8) || (signUpDob.value[2] != '/') || (signUpDob.value[5] != '/') ||
-        (Number(signUpDob.value[0]+signUpDob.value[1]) > 31) || (Number(signUpDob.value[3]+signUpDob.value[4]) > 12)
+        (Number(signUpDob.value[0]+signUpDob.value[1]) > 12) || (Number(signUpDob.value[3]+signUpDob.value[4]) > 31)
         || (Number(signUpDob.value[6]+signUpDob.value[7]+signUpDob.value[8]+signUpDob.value[9]) > 2004)) {
             dobInlineAlert.textContent = "* Date of birth is not valid.";
             signUpDob.insertAdjacentElement('afterend', dobInlineAlert);
@@ -267,26 +267,61 @@ window.onload = function() {
         repPasswordInlineAlert.remove();
     }
 
-    var continueBtn = document.getElementById('submit');
+    if (localStorage.getItem("name") != null) {
+        signUpName.value = localStorage.getItem("name");
+        signUpSurname.value = localStorage.getItem("lastname");
+        signUpDni.value = localStorage.getItem("dni");
+        signUpDob.value = localStorage.getItem("dob");
+        signUpPhone.value = localStorage.getItem("phone");
+        signUpAddress.value = localStorage.getItem("address");
+        signUpCity.value = localStorage.getItem("city");
+        signUpZip.value = localStorage.getItem("zip");
+        signUpEmail.value = localStorage.getItem("email");
+        signUpPassword.value = localStorage.getItem("password");
+        signUpRepPassword.value = localStorage.getItem("password");
+    }
+
+    var continueBtn = document.getElementById('continue-btn');
     continueBtn.addEventListener('click', btn);
 
+    function urlString (name, lastname, dni, dob, phone, address, city, zip, email, password) {
+        var urlArray = ["name="+name, "lastName="+lastname, "dni="+dni, "dob="+dob, "phone="+phone, 
+        "address="+address, "city="+city, "zip="+zip, "email="+email, "password="+password];
+        return urlArray.join("&");
+    }
+
     function btn() {
-        if ((signUpCity.value.length != 0) && (cityInlineAlert.textContent == "") && (signUpAddress.value.length != 0) 
-        && (addressInlineAlert.textContent == "") && (signUpDob.value.length != 0) && 
-        (dobInlineAlert.textContent == "") && (signUpZip.value.length != 0) && (zipInlineAlert.textContent == "") 
-        && (signUpPhone.value.length != 0) && (phoneInlineAlert.textContent == "") && (signUpDni.value.length != 0) 
-        && (dniInlineAlert.textContent == "") && (signUpSurname.value.length != 0) && 
-        (surnameInlineAlert.textContent == "") && (signUpName.value.length != 0) && 
-        (nameInlineAlert.textContent == "") && (signUpEmail.value.length != 0) && (signUpPassword.value.length != 0) 
-        && (emailInlineAlert.textContent == "") && (passwordInlineAlert.textContent == "") && 
-        (signUpPassword.value == signUpRepPassword.value)) {
-            alert('Login successfull');
-            alert('Complete name: '+signUpName.value+' '+signUpSurname.value+'   DNI: '+signUpDni.value+
-            '   Date of birth: '+signUpDob.value+'   Phone number: '+signUpPhone.value+'   Address: '+
-            signUpAddress.value+'   City: '+signUpCity.value+'   ZIP code: '+signUpZip.value+'   Email: '+
-            signUpEmail.value+'  Password: '+signUpPassword.value);
+        if (validateNameB() && validateSurnameB() && validateDniB() && validatePhoneB() && validateZipB() && 
+        validateDobB() && validateAddressB() && validateCityB() && validateEmailB() && validatePasswordB() && 
+        validateRepPasswordB()) {
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?'+urlString(signUpName.value,
+            signUpSurname.value,signUpDni.value,signUpDob.value,signUpPhone.value,signUpAddress.value,
+            signUpCity.value,signUpZip.value,signUpEmail.value,signUpPassword.value))
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (responseJson) {
+                    alert(responseJson.msg);
+                    alert('Complete name: '+signUpName.value+' '+signUpSurname.value+'   DNI: '+signUpDni.value+
+                    '   Date of birth: '+signUpDob.value+'   Phone number: '+signUpPhone.value+'   Address: '+
+                    signUpAddress.value+'   City: '+signUpCity.value+'   ZIP code: '+signUpZip.value+'   Email: '+
+                    signUpEmail.value+'  Password: '+signUpPassword.value);
+                    localStorage.setItem("name", signUpName.value);
+                    localStorage.setItem("lastname", signUpSurname.value);
+                    localStorage.setItem("dni", signUpDni.value);
+                    localStorage.setItem("dob", signUpDob.value);
+                    localStorage.setItem("phone", signUpPhone.value);
+                    localStorage.setItem("address", signUpAddress.value);
+                    localStorage.setItem("city", signUpCity.value);
+                    localStorage.setItem("zip", signUpZip.value);
+                    localStorage.setItem("email", signUpEmail.value);
+                    localStorage.setItem("password", signUpPassword.value);
+                })
+                .catch(function(error) {
+                    console.log(error);
+            });
         } else {
-            alert('Incorrect signup');
+            alert('Incorrect sign up');
         }
     }
 }
